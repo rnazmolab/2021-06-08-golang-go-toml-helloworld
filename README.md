@@ -8,7 +8,7 @@
 
 Hello World to [pelletier/go-toml](https://github.com/pelletier/go-toml) **v2**.
 
-## Reuslts
+## Results
 
 ```console
 $ ls
@@ -26,6 +26,7 @@ name: go-toml
 tags: [go toml]
 =================
 ```
+
 ## Env
 
 ```console
