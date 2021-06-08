@@ -51,3 +51,4 @@ go version go1.16 linux/amd64
 
 [toml · pkg.go.dev](https://pkg.go.dev/github.com/pelletier/go-toml/v2)
 
+https://github.com/pelletier/go-toml/tree/618f0181ac76015c3efdaf8b8ab5a468293f6e82#automatic-field-name-guessing
