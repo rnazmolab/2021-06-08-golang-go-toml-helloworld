@@ -19,11 +19,13 @@ $ go run ./main.go
 Version = 2
 Name = 'go-toml'
 Tags = ['go', 'toml']
+foo_bar_version = '0.0.4'
 
 =================
 version: 2
 name: go-toml
 tags: [go toml]
+foo_bar_version: 0.0.4
 =================
 ```
 

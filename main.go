@@ -7,9 +7,10 @@ import (
 )
 
 type MyConfig struct {
-	Version int
-	Name    string
-	Tags    []string
+	Version       int
+	Name          string
+	Tags          []string
+	FooBarVersion string `toml:"foo_bar_version"`
 }
 
 // Ref: https://pkg.go.dev/github.com/pelletier/go-toml/v2#Marshal
@@ -26,9 +27,10 @@ func main() {
 	fmt.Println("=================")
 
 	cfg1 := MyConfig{
-		Version: 2,
-		Name:    "go-toml",
-		Tags:    []string{"go", "toml"},
+		Version:       2,
+		Name:          "go-toml",
+		Tags:          []string{"go", "toml"},
+		FooBarVersion: "0.0.4",
 	}
 	b, err := marshal(cfg1)
 	if err != nil {
@@ -42,6 +44,7 @@ func main() {
 	version = 2
 	name = "go-toml"
 	tags = ["go", "toml"]
+	foo_bar_version = "0.0.4"
 	`)
 
 	var cfg2 MyConfig
@@ -52,6 +55,7 @@ func main() {
 	fmt.Println("version:", cfg2.Version)
 	fmt.Println("name:", cfg2.Name)
 	fmt.Println("tags:", cfg2.Tags)
+	fmt.Println("foo_bar_version:", cfg2.FooBarVersion)
 
 	fmt.Println("=================")
 }
